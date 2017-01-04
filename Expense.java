@@ -1,10 +1,5 @@
-/* * File: Expense.java
-   * Assignment: Hotel Expense Program
-   * Author: Derrick Kyei
-   * Created: 2 December 2016
-   *
-   * This program asks the user to input a file, calculates the total services in the file, and outputs the value to another .txt file.
-   * */
+//This program asks the user to input a file, calculates the total services in the file, and outputs the value to another .txt file.
+
 import java.io.*;
 import java.util.*;
 public class Expense {
@@ -76,20 +71,14 @@ public class Expense {
     public static void main(String[] args) throws FileNotFoundException{
         String fileName = askUser();
         boolean fileChecker = fileExist(fileName);
-        //will store returned booleon value either true or false, which was returned from the fileExist method.
-        //if this boolean data type fileChecker returned true, meaning the file does exist, then there is no need to continue through with the while loop below.
-        //if this boolean data type fileChecker returned false, meaning the file doesn't exist, then we'll need to continue through with te while loop below.
-        //note that the datatype must match the header method for the fileExist method above.
-        //This while loop continuously asks the user to input the correct file if he or she inputs the wrong file.
         while (!fileChecker) {
             //while the fileName is not the fileName the user inputs condition is true, let's do these 3 statements to keep asking the user for the right file.
             System.out.println("File does not exist\n");
             fileName = askUser(); //do the askUser() method again.
             fileChecker = fileExist(fileName); //do the fileExist(fileName) method again.
             // loop will end when the condition is false.
-            // meaning, when the fileName is the fileName the user inputs condition is false, which means it's found, then the loop ends.
         }
-        File userFile = userFile(fileName); //we store the returned value from the userFile(String fileName) method inside the class File named userFile which is assigned to the userFile(String fileName) method.
+        File userFile = userFile(fileName);
         scanFile(userFile); //we only just passed the userFile inside the scanFile(File hotelFile) method
 
     }
