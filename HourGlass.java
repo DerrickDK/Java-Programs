@@ -35,7 +35,7 @@ public class HourGlass {
                 System.out.print(":");
             }
             System.out.print("/");
-            System.out.println();
+            System.out.println(); 
         }
     }
     // This method outputs the bottom of the triangular shape of the hour glass.
