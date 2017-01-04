@@ -1,10 +1,5 @@
-/* * File: HourGlass.java
-   * Assignment: Building Java Programs Problem #4
-   * Author: Derrick Kyei
-   * Created: 26 October 2016
-   *
-   * This program uses for loops and static methods to output a scalable hour glass figure
-   * */
+//This program uses for loops and static methods to output a scalable hour glass figure
+  
 
 public class HourGlass {
     public static final int HEIGHT = 9; // scalable constant
