@@ -32,12 +32,12 @@ public class Expense {
         double spaTot = 0.0;
         double roomTot = 0.0;
         double lodgingTot = 0.0;
-        while (scanFile.hasNextLine()) { //This while loop test the condition that if the user's file has another line in the inpu
-            String fileLine = scanFile.nextLine(); // if i were to output this, it would print out the while sentence of the hotelFile
-            Scanner lineScan = new Scanner(fileLine);//or i can do newScanner(fileLine).useDelimiter(";");
+        while (scanFile.hasNextLine()) { //This while loop test the condition that if the user's file has another line in the input
+            String fileLine = scanFile.nextLine(); 
+            Scanner lineScan = new Scanner(fileLine); //or i could have done new Scanner(fileLine).useDelimiter(";");
             // the new delimiter to tokenize words is a semicolon
-            lineScan.useDelimiter(";"); //remember, objects can use methods
-            lineScan.next(); // if i were to output this, it would print Jason Inouye or the first token, which are names.
+            lineScan.useDelimiter(";"); 
+            lineScan.next(); 
             String service = lineScan.next(); //second token is the service
             //While scanning the file line by line, once the condition in the if statement is met, the loop proceeds and sums the total service for each service.
             if (service.equals("Conference")) {
