@@ -1,7 +1,7 @@
 
 
 import java.util.*;
-//This program ask the user for their bank account balance and determines the interest rate the individual wants to invest for a certain amount of time. 
+//This program asks the user for their bank account balance and determines the interest rate the individual wants to invest for a certain amount of time. 
 public class Investment {
 	private String name; 
 	private double Balance;
